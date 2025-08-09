@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background-color: #E1E9FF;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+}
+.contenido{
+    width: 30%;
+    background-color: #fff;
+    border-radius: 15px;
+    z-index: 5;
+}
+.contenido .ilustracion{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.contenido .musica{
+    padding: 30px;
+    text-align: center;
+}
+.contenido .musica .parrafo{
+    color: #7280a7;
+    margin: 15px 0;
+}
+.contenido .musica .precio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F9FD;
+    padding: 15px;
+    border-radius: 15px;
+}
+.contenido .musica .precio .musicaPlan{
+    display: flex;
+    align-items: center;
+}
+.contenido .musica .precio .cambiar{
+    color: #382BE1;
+}
+.contenido .musica .precio .cambiar:hover{
+    text-decoration: none;
+}
+.contenido .musica .precio .musicaPlan .plan{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.contenido .musica .precio .musicaPlan .plan .valorAño{
+    color: #7280a7;
+}
+.contenido .musica .pago{
+    display: block;
+    background-color: #382BE1;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 17px 17px 0px rgba(0,0,0,0.2);
+}
+.contenido .musica .pago:hover{
+    background-color: #6f67e0;
+}
+.contenido .musica .cancelar{
+    text-decoration: none;
+    padding: 10px;
+    color: #7280a7;
+}
+.contenido .musica .cancelar:hover{
+    color: #000;
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .contenido{
+        width: 55%;
+    }
+}
+@media (min-width: 601px) and (max-width: 768px){
+    .contenido{
+        width: 70%;
+    }
+}
+@media (min-width: 481px) and (max-width: 600px){
+    body{
+        background-image: url("../images/pattern-background-mobile.svg");
+        background-repeat: repeat-x;
+    }
+    .contenido{
+        width: 80%;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px){
+    body{
+        background-image: url("../images/pattern-background-mobile.svg");
+        background-repeat: repeat-x;
+    }
+    .contenido{
+        width: 90%;
+    }
+}

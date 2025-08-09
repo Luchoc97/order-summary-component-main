@@ -1,2 +1,5 @@
-# order-summary-component-main
-Repositorio para publicar desafio order-summary-component-main de frontend mentor
+# Frontend Mentor - Order summary card
+
+![Design preview for the Order summary card coding challenge](preview.jpg)
+
+## Welcome! 👋
